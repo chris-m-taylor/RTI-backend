@@ -1,0 +1,26 @@
+SELECT
+	records.id,
+	records.age,
+	workclasses.name,
+	education_levels.name,
+	records.education_num,
+	marital_statuses.name,
+	occupations.name,
+	relationships.name,
+	races.name,
+	sexes.name,
+	records.capital_gain,
+	records.capital_loss,
+	records.hours_week,
+	countries.name,
+	records.over_50k
+FROM
+		records
+		INNER JOIN workclasses ON workclasses.id = records.workclass_id
+		INNER JOIN education_levels ON education_levels.id = records.education_level_id
+		INNER JOIN marital_statuses ON marital_statuses.id = records.marital_status_id
+		INNER JOIN occupations ON occupations.id = records.occupation_id
+		INNER JOIN relationships ON relationships.id = records.relationship_id
+		INNER JOIN races ON races.id = records.race_id
+		INNER JOIN sexes ON sexes.id = records.sex_id
+		INNER JOIN countries ON countries.id = records.country_id
