@@ -8,7 +8,9 @@ Welcome to Exercise 01. This exercise provides a small SQLite database with some
 
 1. Used DB Browser for sqlite app to perform a query (can be found in sql_query.txt) to flatten the tables.
 2. Exported the flattened table as a csv and made minor changes to the column names.
-3. Wrote a python script that read the data and performed minor analysis to arrive at a conclusion.
+3. Wrote a python script that read the data and performed minor analysis to arrive at several conclusions.
+4. Took a simple html template and added visuals based on the information I gathered through the script
+5. Launched website on Github pages.
 
 
 ### Some guidance
